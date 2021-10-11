@@ -1,0 +1,1 @@
+const nome = "Hospital"; // declara uma constante e atribui o valor "Hospital" (um 'string', uma cadeia de carateres)
