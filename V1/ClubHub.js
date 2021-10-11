@@ -1,16 +1,35 @@
 const nome = "ClubHub"; // declara uma constante e atribui o valor "ClubHub" (um 'string', uma cadeia de carateres)
 
 class Partner {
-    #dataInscrição;
-    constructor(name, surname, email, ) {
+    #registrationDate;
+    constructor(name, surname, email, nascimento) {
         this.name = name;
         this.surname = surname;
         this.email = email;
-    }
+        this.nascimento = dataNascimento;
+    }    
 
     toString() {
-        return `${this.nome} ${this.surname} - ${this.nome} `;
+        return `${this.nome} ${this.surname} - ${this.email} `;
     }
+    get completeName() { 
+        return `${this.nome} ${this.surname}`;
+    }
+    get idade() {
+        // To implement
+    }
+    set registrationDate (){
+        // To implement
+    }
+}
+
+
+class PartnerPayment{
+    constructor(partner, paymentDay, ) {
+        this.partner = partner;
+        this.paymentDay = paymentDay;        
+    }
+
 
 }
 
@@ -25,5 +44,5 @@ class PartnerLevel{
         return `${this.levelName} -  ${this.nome} `;
     }
 
-    /*test*/
+
 }
