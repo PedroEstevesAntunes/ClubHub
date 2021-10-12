@@ -72,7 +72,7 @@ const partnerPayment = new Set()
 /* Set Payments */
 const payment1 = new PartnerPayment(partner1.name, basic.levelPrice, new Date(2021, 09, 3)); 
 const payment2 = new PartnerPayment(partner2.name, basic.levelPrice, new Date(2021, 7, 4));
-const payment3 = new PartnerPayment(mpartner3.name, advanced.levelPrice, new Date(2021, 10, 4));
+const payment3 = new PartnerPayment(partner3.name, advanced.levelPrice, new Date(2021, 10, 4));
 const payment4 = new PartnerPayment(partner4.name, premium.levelPrice, new Date(2021, 7, 31))
 
 
