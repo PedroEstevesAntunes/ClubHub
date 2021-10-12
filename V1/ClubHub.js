@@ -6,7 +6,7 @@ class Partner {
         this.name = name;
         this.surname = surname;
         this.email = email;
-        this.nascimento = dataNascimento;
+        this.nascimento = nascimento;
     }    
 
     toString() {
@@ -27,7 +27,6 @@ class Partner {
     }
 }
 
-
 class PartnerLevel{
     constructor(levelName, levelPrice) {
         this.levelName = levelName;
@@ -38,7 +37,6 @@ class PartnerLevel{
         return `${this.levelName} -> Price: ${this.levelPrice}€ `;
     }
 }
-
 
 class PartnerPayment{
     constructor(partner, paymentPrice, paymentday) {
