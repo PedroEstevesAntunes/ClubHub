@@ -90,3 +90,10 @@ partnerPayment.add(payment1);
 partnerPayment.add(payment2);
 partnerPayment.add(payment3);
 partnerPayment.add(payment4);
+
+
+Object.defineProperties(clubHub, { 
+    partnerLevel: { value: partnerLevel, writable: false }, // Evitar a alteração deste campo (o que não impede a alteração dos campos do campo)
+    partner: { value: partner, writable: false },
+    partnerPayment: { value: partnerPayment, writable: false }
+});
