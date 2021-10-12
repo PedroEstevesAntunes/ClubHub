@@ -80,7 +80,7 @@ partnerLevel.push(basic);
 partnerLevel.push(advanced);
 partnerLevel.push(premium);
 
-partner.set(partner1.email, partner1); // Para colecionar pessoas, o Map é muito útil, porque o email da pessoa, que é único para cada pessoa, pdoe servir de "Key" no Map
+partner.set(partner1.email, partner1); 
 partner.set(partner2.email, partner2);
 partner.set(partner3.email, partner3);
 partner.set(partner4.email, partner4);
@@ -93,7 +93,7 @@ partnerPayment.add(payment4);
 
 
 Object.defineProperties(clubHub, { 
-    partnerLevel: { value: partnerLevel, writable: false }, // Evitar a alteração deste campo (o que não impede a alteração dos campos do campo)
+    partnerLevel: { value: partnerLevel, writable: false }, 
     partner: { value: partner, writable: false },
     partnerPayment: { value: partnerPayment, writable: false }
 });
