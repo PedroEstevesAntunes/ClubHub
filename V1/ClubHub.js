@@ -1,4 +1,4 @@
-const clubHub = { 
+export const clubHub = { 
     nome: "ClubHub"
 };
 
