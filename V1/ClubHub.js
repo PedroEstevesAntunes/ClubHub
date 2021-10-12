@@ -32,7 +32,6 @@ class PartnerLevel{
         this.levelName = levelName;
         this.levelPrice = levelPrice;        
     }
-
     toString() {
         return `${this.levelName} -> Price: ${this.levelPrice}€ `;
     }
@@ -53,3 +52,11 @@ PartnerPayment.prototype.imprimir = function () {
 const basic = new PartnerLevel("Basic", 15);
 const advanced = new PartnerLevel("Advanced", 30);
 const premium = new PartnerLevel("Premium", 80);
+
+
+partner1 = new Partner("Pedro","Antunes","pa@gmail.com",new Date(2021, 10, 12));
+partner2 = new Partner("Rui","Patricio","rp@gmail.com",new Date(2021, 10, 10));
+partner3 = new Partner("Patricia","Duarte","pd@gmail.com",new Date(2021, 08, 05));
+partner4 = new Partner("Carolina","Rodrigues","cr@gmail.com",new Date(2021, 10, 12));
+
+
