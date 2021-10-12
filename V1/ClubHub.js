@@ -1,4 +1,6 @@
-const nome = "ClubHub"; // declara uma constante e atribui o valor "ClubHub" (um 'string', uma cadeia de carateres)
+const clubHub = { 
+    nome: "ClubHub"
+};
 
 class Partner {
     #registrationDate;
@@ -49,14 +51,42 @@ PartnerPayment.prototype.imprimir = function () {
     return `Payment ${this.paymentPrice}€ by ${this.partner} -> ${this.paymentday}`;
 }
 
+
+/* Set Payment Levels */
 const basic = new PartnerLevel("Basic", 15);
 const advanced = new PartnerLevel("Advanced", 30);
 const premium = new PartnerLevel("Premium", 80);
 
 
+/* Set Partners */
 partner1 = new Partner("Pedro","Antunes","pa@gmail.com",new Date(2021, 10, 12));
 partner2 = new Partner("Rui","Patricio","rp@gmail.com",new Date(2021, 10, 10));
 partner3 = new Partner("Patricia","Duarte","pd@gmail.com",new Date(2021, 08, 05));
 partner4 = new Partner("Carolina","Rodrigues","cr@gmail.com",new Date(2021, 10, 12));
 
+/* Set Levels */
+const partnerLevel = []  
+const partner = new Map(); 
+const partnerPayment = new Set()
 
+/* Set Payments */
+const payment1 = new PartnerPayment(partner1.name, basic.levelPrice, new Date(2021, 09, 3)); 
+const payment2 = new PartnerPayment(partner2.name, basic.levelPrice, new Date(2021, 7, 4));
+const payment3 = new PartnerPayment(mpartner3.name, advanced.levelPrice, new Date(2021, 10, 4));
+const payment4 = new PartnerPayment(partner4.name, premium.levelPrice, new Date(2021, 7, 31))
+
+
+partnerLevel.push(basic);
+partnerLevel.push(advanced);
+partnerLevel.push(premium);
+
+partner.set(partner1.email, partner1); // Para colecionar pessoas, o Map é muito útil, porque o email da pessoa, que é único para cada pessoa, pdoe servir de "Key" no Map
+partner.set(partner2.email, partner2);
+partner.set(partner3.email, partner3);
+partner.set(partner4.email, partner4);
+
+
+partnerPayment.add(payment1);
+partnerPayment.add(payment2);
+partnerPayment.add(payment3);
+partnerPayment.add(payment4);
