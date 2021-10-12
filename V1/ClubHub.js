@@ -10,10 +10,10 @@ class Partner {
     }    
 
     toString() {
-        return `${this.nome} ${this.surname} - ${this.email} `;
+        return `${this.name} ${this.surname} - ${this.email} `;
     }
     get completeName() { 
-        return `${this.nome} ${this.surname}`;
+        return `${this.name} ${this.surname}`;
     }
     get idade() {
         return this.nascimento ? new Date().getYear() - this.nascimento.getYear() : undefined;
@@ -47,7 +47,7 @@ class PartnerPayment{
 }
 
 PartnerPayment.prototype.imprimir = function () {
-    return `Payment of ${this.partner} -> ${this.paymentPrice}€ -  ${this.paymentday}`;
+    return `Payment ${this.paymentPrice}€ by ${this.partner} -> ${this.paymentday}`;
 }
 
 const basic = new PartnerLevel("Basic", 15);
