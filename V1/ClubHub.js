@@ -61,7 +61,7 @@ const premium = new PartnerLevel("Premium", 80);
 /* Set Partners */
 partner1 = new Partner("Pedro","Antunes","pa@gmail.com",new Date(2021, 10, 12));
 partner2 = new Partner("Rui","Patricio","rp@gmail.com",new Date(2021, 10, 10));
-partner3 = new Partner("Patricia","Duarte","pd@gmail.com",new Date(2021, 08, 05));
+partner3 = new Partner("Patricia","Duarte","pd@gmail.com",new Date(2021, 8, 5));
 partner4 = new Partner("Carolina","Rodrigues","cr@gmail.com",new Date(2021, 10, 12));
 
 /* Set Levels */
@@ -70,7 +70,7 @@ const partner = new Map();
 const partnerPayment = new Set()
 
 /* Set Payments */
-const payment1 = new PartnerPayment(partner1.name, basic.levelPrice, new Date(2021, 09, 3)); 
+const payment1 = new PartnerPayment(partner1.name, basic.levelPrice, new Date(2021, 9, 3)); 
 const payment2 = new PartnerPayment(partner2.name, basic.levelPrice, new Date(2021, 7, 4));
 const payment3 = new PartnerPayment(partner3.name, advanced.levelPrice, new Date(2021, 10, 4));
 const payment4 = new PartnerPayment(partner4.name, premium.levelPrice, new Date(2021, 7, 31))
