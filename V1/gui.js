@@ -1,4 +1,4 @@
-import { clubHub } from "./clubHub.js"; 
+import { clubHub , Partner } from "./clubHub.js"; 
 
 const payment = document.getElementById("payment"); // Uma <table> no HTML
 
