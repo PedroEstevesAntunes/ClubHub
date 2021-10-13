@@ -2,7 +2,7 @@ export const clubHub = {
     nome: "ClubHub"
 };
 
-class Partner {
+export class Partner {
     #registrationDate;
     constructor(name, surname, email, nascimento) {
         this.name = name;
