@@ -59,10 +59,10 @@ const premium = new PartnerLevel("Premium", 80);
 
 
 /* Set Partners */
-partner1 = new Partner("Pedro","Antunes","pa@gmail.com",new Date(2021, 10, 12));
-partner2 = new Partner("Rui","Patricio","rp@gmail.com",new Date(2021, 10, 10));
-partner3 = new Partner("Patricia","Duarte","pd@gmail.com",new Date(2021, 8, 5));
-partner4 = new Partner("Carolina","Rodrigues","cr@gmail.com",new Date(2021, 10, 12));
+let partner1 = new Partner("Pedro","Antunes","pa@gmail.com",new Date(2021, 10, 12));
+let partner2 = new Partner("Rui","Patricio","rp@gmail.com",new Date(2021, 10, 10));
+let partner3 = new Partner("Patricia","Duarte","pd@gmail.com",new Date(2021, 8, 5));
+let partner4 = new Partner("Carolina","Rodrigues","cr@gmail.com",new Date(2021, 10, 12));
 
 /* Set Levels */
 const partnerLevel = []  

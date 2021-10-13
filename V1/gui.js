@@ -1,6 +1,4 @@
-// NOTA INICIAL: este ficheiro fonte define a interação com a interface gráfica (GUI) da app; o "business object" da app está em hospital.js
-
-import { clubHub } from "./clubHub.js"; // Refereri a um objeto declarado como exportado naquele outro ficheiro
+import { clubHub } from "./clubHub.js"; 
 
 const payment = document.getElementById("payment"); // Uma <table> no HTML
 
